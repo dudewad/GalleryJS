@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+/**
+ * Base stuff
+ */
+@import "./include/_vars.scss";
+@import "./partials/_core.scss";
+@import "./partials/_reset.scss";
+
+
+
+/**
+ * Component Styles
+ */
+@import "./partials/_gallery.scss";

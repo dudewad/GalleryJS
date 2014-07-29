@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Gallery JS - Full Example (Images)</title>
+    <script src="js/app.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/default.css"/>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- A wrapper div allows for compartmentalization. It is not required. -->
+        <div class="gallery">
+
+            <!-- Controls are absolutely positioned with a container height of zero.
+            This allows them to not interfere with the display div and have their top
+            position unaffected by the parent container's movement. More elaborate
+            control placement can be achieved however you want (the location of this
+            item in the DOM is agnostic to functionality). -->
+            <div id="galleryControls" class="galleryControls">
+                <img src="images/controls/next.jpg" class="next" alt="next"/>
+                <img src="images/controls/previous.jpg" class="previous" alt="previous"/>
+            </div>
+
+            <!-- Display div, also the GalleryJS constructor object -->
+            <div id="galleryDisplay" class="galleryDisplay"
+                 data-gallery-constructor="true"
+                 data-gallery-thumbs-id="galleryThumbs"
+                 data-gallery-controls-id="galleryControls"
+                 data-gallery-thumbs-controls-id="galleryThumbControls"
+                 data-gallery-set-size="3"
+                 data-gallery-auto-rotate="7000"
+                 data-gallery-clear-auto-on-interact="true">
+
+                <!-- It's nice to populate the slider with your first slide,
+                if you're looking to support browsers that don't have JS enabled.
+                This means that at the least they'll see your first slide's content.
+                It's not unheard of to leave the display div empty to reduce code
+                clutter, but that is perhaps "not so great" practice as far as
+                accessibility is concerned.-->
+                <div class="slide">
+                    <img src="images/fpo1.jpg"/>
+                </div>
+            </div>
+
+            <!-- Thumbnail Controls are absolutely positioned with a container height
+            of zero. This allows them to not interfere with the display div and have
+            their top position unaffected by the parent container's movement. More
+            elaborate control placement can be achieved however you want (the location
+            of this item in the DOM is agnostic to functionality). -->
+            <div id="galleryThumbControls" class="galleryThumbControls">
+                <img src="images/controls/nextThumb.jpg" class="next" alt="next"/>
+                <img src="images/controls/previousThumb.jpg" class="previous" alt="previous"/>
+            </div>
+
+            <!-- The galleryThumbsMask allows you to have thumbnail pagination. It needs
+            to be set to the correct width ((thumbnail width + thumb margin width) * gallery set size)
+            and should have overflow set to hidden. -->
+            <div class="galleryThumbsMask">
+                <!-- This UL provides all data for the slideshow. Note: this does not have
+                to be a UL, but for semantic purposes it is. -->
+                <ul id="galleryThumbs" class="galleryThumbs">
+                    <!-- Read the docs for how the data tags on the thumbs affect the
+                    content of the Gallery - other formats are available for different
+                    types of data. Shown here: image type. Note that is is not required
+                    to use the same image source. -->
+                    <li class="thumb" data-img-src="images/fpo1.jpg">
+                        <img src="images/fpo1.jpg" alt="FPO1"/>
+                    </li>
+                    <li class="thumb" data-img-src="images/fpo2.jpg">
+                        <img src="images/fpo2.jpg" alt="FPO2"/>
+                    </li>
+                    <li class="thumb" data-img-src="images/fpo3.jpg">
+                        <img src="images/fpo3.jpg" alt="FPO3"/>
+                    </li>
+                    <li class="thumb" data-img-src="images/fpo4.jpg">
+                        <img src="images/fpo4.jpg" alt="FPO4"/>
+                    </li>
+                    <li class="thumb" data-img-src="images/fpo5.jpg">
+                        <img src="images/fpo5.jpg" alt="FPO5"/>
+                    </li>
+                    <li class="thumb" data-img-src="images/fpo6.jpg">
+                        <img src="images/fpo6.jpg" alt="FPO6"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

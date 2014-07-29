@@ -1,0 +1,102 @@
+.gallery {
+	width: 640px;
+	margin: 50px auto 0 auto;
+	overflow: hidden;
+
+	.galleryDisplay {
+		/** Clearfix **/
+		&:before, &:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		&.inTransition {
+			width: 200%;
+
+			.slide,
+			.transition {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+
+	.slide,
+	.transition {
+		position:relative !important;
+	}
+
+	.galleryThumbsMask{
+		height:39px;
+		width:180px;
+		overflow:hidden;
+		margin:30px auto 0 auto;
+
+		.galleryThumbs{
+			width:100000em;
+		}
+	}
+
+	.thumb {
+		float:left;
+		width: 50px;
+		margin:1px 10px 0 0;
+
+		img{
+			width:100%;
+			display:block;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.selected{
+			border:1px solid #09F;
+			margin:0 8px 0 0;
+		}
+	}
+
+	.next,
+	.previous {
+		position: absolute;
+		cursor: pointer;
+	}
+
+	.galleryControls{
+		position: absolute;
+		height: 0;
+		overflow: visible;
+		z-index: 1;
+
+		.next {
+			top: 200px;
+			left: 590px;
+		}
+
+		.previous {
+			top: 200px;
+			left: 0;
+		}
+	}
+
+	.galleryThumbControls{
+		position:absolute;
+		margin-top: 30px;
+		left: 50%;
+		height:0;
+		overflow:visible;
+		z-index:1;
+
+		.next{
+			top: 3px;
+			left:85px;
+		}
+
+		.previous{
+			top: 3px;
+			left:-125px;
+		}
+	}
+}
