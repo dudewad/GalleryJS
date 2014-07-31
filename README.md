@@ -9,9 +9,6 @@ Description
 GalleryJS is a robust gallery module designed for rapid deployment. Coupled with proper CSS the functionality works all the way back to IE8 in quirks mode.
 This gallery is designed to defeat the challenges presented by most gallery/slider implementation scenarios.
 
-Business Overview
-=================
-
 Business Objectives
 ===================
 The objective of the Gallery module is to standardize and speed up the implementation of the various types slide galleries, and to support as
