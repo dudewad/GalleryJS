@@ -4,6 +4,11 @@ Gallery
 Current Version: 1.1
 Release Date: 7.29.2014
 
+Description
+===========
+GalleryJS is a robust gallery module designed for rapid deployment. Coupled with proper CSS the functionality works all the way back to IE8 in quirks mode.
+This gallery is designed to defeat the challenges presented by most gallery/slider implementation scenarios.
+
 Business Overview
 =================
 
