@@ -45,8 +45,9 @@ Requirements
 	
 Quick Start
 ===========
-##NOTE:
-######This quick-start assumes that you are familiar with/reading into the example-full.html file that is included in the dev directory.
+######Note: This quick-start assumes that you are familiar with/reading into the example-full.html file that is included in the dev directory.
+
+---
 
 1. Include the Gallery.js module in the page head.
 2. Inside the document.ready call, instantiate all Gallery modules on the page:
