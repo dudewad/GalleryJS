@@ -47,6 +47,7 @@ Quick Start
 ===========
 1. Include the Gallery.js module in the page head.
 2. Inside the document.ready call, instantiate all Gallery modules on the page:
+```
     (function () {
         $(document).ready(function () {
             $("[data-gallery-constructor='true']").each(function () {
@@ -55,6 +56,7 @@ Quick Start
             });
         });
     })();
+```
     
 3. Add the base version of the gallery HTML code. The developer may need to add extra code for purposes of formatting, but this is
 project-specific.
