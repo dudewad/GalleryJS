@@ -172,6 +172,9 @@ Gallery.prototype = {
             case "event_gallery_change":
                 return "GalleryChange";
                 break;
+            case "event_gallery_change_complete":
+                return "GalleryChangeComplete";
+                break;
             case "event_gallery_close":
                 return "GalleryClose";
                 break;
@@ -200,6 +203,8 @@ Gallery.prototype = {
         var endX;
 
         this.inTransition = true;
+        //Fire a slide change event
+        $("body").trigger(this.constant("EVENT_GALLERY_CHANGE"), [this]);
 
         //Clear the display area on init
         if (this.isInitCall === true) {
@@ -254,6 +259,8 @@ Gallery.prototype = {
                 context.display.find(".slide").remove();
                 slide.removeClass("transition");
                 slide.addClass("slide");
+                //Fire a slide change event
+                $("body").trigger(context.constant("EVENT_GALLERY_CHANGE_COMPLETE"), [context]);
             });
         };
 
@@ -272,9 +279,6 @@ Gallery.prototype = {
 
         this.controls.show();
         this.display.show();
-
-        //Fire a slide change event
-        $("body").trigger(this.constant("EVENT_GALLERY_CHANGE"), [this]);
     },
 
 
