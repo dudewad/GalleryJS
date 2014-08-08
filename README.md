@@ -56,18 +56,23 @@ Quick Start
         });
     })();
     
-3.Add the base version of the gallery HTML code. The developer may need to add extra code for purposes of formatting, but this is
+3. Add the base version of the gallery HTML code. The developer may need to add extra code for purposes of formatting, but this is
 project-specific.
+
 	a. The gallery requires a minimum of two elements:
 		i. A div containing thumbnails.
 		ii. A div for the main gallery display area.
+		
 	b. The gallery also accepts two optional elements:
 		i. A div containing controls for the gallery display (typically set to position:absolute with a height of zero, and placed just
 before the gallery div, allowing easy positioning of the controls around the player using positioning).
 		ii. A div containing controls for the thumbnail slider (positioned similar to the main gallery controls).
+		
 	c. More robust versions of the player are quite common. For such implementations, check the examples section.
+	
 4. For each <li> within the thumbs <ul> element, specify which type of gallery element it is by simultaneously specifying the target full-size
 content as a data-attribute tag. Fill each <li> with an image for the thumbnail.
+
 5. For cases implementing gallery and thumbnail controls, adding and positioning elements of any type (img, div, etc) with the proper class
 names is all that is needed to attain the functionality. Possible class names are “next”, “previous”, and “close”, each one doing what one
 would assume it would do. The close element applies only to the main gallery controls block, and even then only when the gallery is
