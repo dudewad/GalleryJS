@@ -66,12 +66,16 @@ Quick Start
 project-specific.
 
 	a. The gallery requires a minimum of two elements:
+	
 		i. A div containing thumbnails.
+		
 		ii. A div for the main gallery display area.
 		
 	b. The gallery also accepts two optional elements:
+	
 		i. A div containing controls for the gallery display (typically set to position:absolute with a height of zero, and placed just
 before the gallery div, allowing easy positioning of the controls around the player using positioning).
+
 		ii. A div containing controls for the thumbnail slider (positioned similar to the main gallery controls).
 		
 	c. More robust versions of the player are quite common. For such implementations, check the examples section.
