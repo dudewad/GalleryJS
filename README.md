@@ -70,8 +70,8 @@ before the gallery div, allowing easy positioning of the controls around the pla
 		
 	c. More robust versions of the player are quite common. For such implementations, check the examples section.
 	
-4. For each <li> within the thumbs <ul> element, specify which type of gallery element it is by simultaneously specifying the target full-size
-content as a data-attribute tag. Fill each <li> with an image for the thumbnail.
+4. For each li tag within the thumbs ul tag element, specify which type of gallery element it is by simultaneously specifying the target full-size
+content as a data-attribute tag. Fill each li tag with an image for the thumbnail.
 
 5. For cases implementing gallery and thumbnail controls, adding and positioning elements of any type (img, div, etc) with the proper class
 names is all that is needed to attain the functionality. Possible class names are “next”, “previous”, and “close”, each one doing what one
